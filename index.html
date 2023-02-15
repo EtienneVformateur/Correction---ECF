@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ECF</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="app">
-        <div class="controlContainer">
-            <input type="text" placeholder="Rechercher" id="searchInput">
-            <input type="range" id="rangeInput"><span id="rangeSpan"></span>
-            <div class="btnContainer">
-                <button>Tri croissant</button>
-                <button>Tri décroissant</button>
-                <button>Tri alphabétique</button>
-            </div>
+      <div class="controlContainer">
+        <input type="text" placeholder="Rechercher" id="searchInput" />
+        <div class="rangeContainer">
+          <input type="range" value=24 max=200 id="rangeInput" oninput="document.getElementById('rangeSpan').textContent = this.value" />
+          <span id="rangeSpan">24</span>
         </div>
-        <div class="countriesContainer">
-            <!-- <div class="countryContainer">
-                <img src="" alt="drapeau">
-                <span id="nameCountry"></span>
-                <span id="capitalCountry"></span>
-                <span>Population : <span id="populationCountry"></span></span>
-            </div> -->
-            <div class="countryContainer">
-                <img src="https://mainfacts.com/media/images/coats_of_arms/is.svg" alt="drapeau">
-                <span id="nameCountry">France</span>
-                <span id="capitalCountry">Paris</span>
-                <span>Population : <span id="populationCountry">1 000 000</span></span>
-            </div>
+        <div class="btnContainer">
+          <button>Tri croissant</button>
+          <button>Tri décroissant</button>
+          <button>Tri alphabétique</button>
         </div>
+      </div>
+      <div class="countriesContainer">
+       
+        <!-- <div class="card">
+          <img
+            src="https://mainfacts.com/media/images/coats_of_arms/is.svg"
+            alt="drapeau"
+          />
+          <div class="informationContainer">
+              <span id="nameCountry">France</span>
+              <span id="capitalCountry">Paris</span>
+              <span>Population : 
+                <span id="populationCountry">1 000 000</span>
+                </span>
+            </div>
+        </div> -->
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

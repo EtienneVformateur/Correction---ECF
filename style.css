@@ -1,0 +1,28 @@
+.controlContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.countriesContainer{
+    display: flex;
+}
+.card{
+    background: black;
+    color:white;
+    margin: 50px;
+    padding: 20px;
+    
+
+}
+
+img{
+    width: 300px;
+}
+
+.informationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
